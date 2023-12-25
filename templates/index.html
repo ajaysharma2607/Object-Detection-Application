@@ -1,0 +1,91 @@
+
+<html>
+    <head>
+        <title>
+            Object Detection
+        </title>
+        
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+    </head>
+    <body>
+
+        <!-- --------------------------------------------------Navigation Section-------------------------------------------- -->
+        <header>
+            <h2 class="logo">Object <span>Detection</span></h2>
+            <nav class="navigator">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Help</a>
+                <a href="#">Contact</a>
+                <button class="btn-popup btn-5">Login</button>
+            </nav>
+        </header>
+
+ 
+        <!-- ------------------------------------------------Header Section--------------------------------------------- -->
+
+        <div class="main"></div>
+        <div class="container">
+            <h1>Welcome to <span> Object Detection</span></h1>
+            <div class="button">
+                    <a href="http://127.0.0.1:5000/extract" target=""><button class="custom-btn btn-1" >DEMO</button></a>
+            </div>
+            <div id="results"></div>
+        </div>
+
+        <!-- --------------------------------------------------Description Section---------------------------------------------- -->
+        <div class="row">
+            <p class="def">Detect Objects like Peoples, Animals, inanimates from Picture</p> <br><br> 
+            <div class="row1">
+                <div class="row1-col2">
+                    <img src="{{bg}}" alt="YouTube App opening in phone" width="624px" height="400px" style="border-radius: 10px 0px 0px 10px;">
+                </div>
+
+                <div class="row1-col3">
+                    <h1>Detect <br><span>Objects</span> from <br>Picture</h1><p><b>Object Detection</b> is a computer vision technique for locating instances of objects in images. It uses <b>YOLO</b> which is a real-time object detection algorithm that is very faster and more accurate.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------------------How To Download(rows) Section--------------------------------------------------- -->
+        <div class="rows">
+            <div class="help">
+                <div class="help-col2">
+                   <h4> HOW TO DETECT OBJECTS</h4>
+                </div>
+                <div class="help-col3">
+                    <center><p>You must follow these three easy steps to detect any objects like humans, animals, inanimates from Picture. See their description below.</p></center>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="row2-col2">
+                    <img src="{{first_pic}}" alt="YouTube App opening in phone" >
+                    <h2>Search Image</h2>
+                    <p>Open Your PC or search image online in which you to detect and count the objects.</p>              
+                </div>
+
+                <div class="row2-col3">
+                    <img src="{{second_pic }}" alt="YouTube App opening in phone" >
+                    <h2>Select the Image</h2>
+                    <p>Now select that image which you selected from your PC and upload it from object detection page.</p>
+              
+                </div>
+
+                <div class="row2-col4">
+                    <img src="{{third_pic}}" alt="YouTube App opening in phone">
+                    <h2>Detect Object</h2>
+                    <p>Click on button 'Detect Object' and you will get the result with count and name of detected object.</p>
+                </div>
+            </div>   
+        </div>
+        </div>
+
+
+        <!-- ---------------------------------------------------------Footer Section-------------------------------------------------------------------- -->
+        <div class="footer">  
+            @Copyright <a href="#"> G25 </a> 2024- All Right Reserved.   
+        </div>  
+    </body>
+</html>
